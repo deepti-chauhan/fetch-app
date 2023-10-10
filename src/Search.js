@@ -5,7 +5,7 @@ function Search() {
 
   return (
     <>
-      <div className='container'>
+      <div className='search'>
         <h1>My Technical News Website </h1>
         <form onSubmit={(e) => e.preventDefault()}>
           <div>

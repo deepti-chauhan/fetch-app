@@ -10,10 +10,13 @@ html {
 }
 
 body {
+  background: url('https://images.unsplash.com/photo-1451188502541-13943edb6acb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80');
   background-color: rgb(181, 200, 240);
+  background: no-repeat cover;
 }
 
 h1 {
+  color: antiquewhite;
   font-size: 3.2rem;
   margin: 2rem;
   text-align: center;
@@ -34,18 +37,42 @@ span {
 }
 
 .container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 4rem;
+  gap: 4rem; */
+  margin-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 0.1rem;
+  row-gap: 3rem;
+}
+
+.search {
+  /* background-color: blue; */
+  text-align: center;
+}
+
+.search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  /* background-color: antiquewhite; */
+  padding: 20px 400px 20px 20px;
+  border-radius: 45px;
+  font-size: medium;
+  backdrop-filter: saturate(180%) blur(10px);
+  letter-spacing: 3px;
 }
 
 .card {
-  min-width: 20rem;
-  width: 40vw;
+  min-width: 10rem;
+  width: 30vw;
   padding: 4rem;
   background-color: rgb(189, 230, 163);
+  border-radius: 30px;
 }
 
 .card-btn {
@@ -61,5 +88,30 @@ a {
 }
 
 #rmv-btn {
+  background-color: azure;
   color: red;
 }
+
+/* pagination start */
+.pagination-container {
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin: 20px 10px 20px 10px;
+  background: transparent;
+  background-color: rebeccapurple;
+  color: aliceblue;
+  /* border-radius: 25px; */
+}
+/* pagination ends */

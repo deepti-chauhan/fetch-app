@@ -30,10 +30,15 @@ function Stories() {
                 By <span>{author}</span> | <span>{num_comments}</span> Comments
               </p>
               <div className='card-btn'>
-                <a href={url} target='_blank' rel='noreferrer'>
+                <a href={url} target='_blank' rel='noreferrer' className='btn'>
                   Read More
                 </a>
-                <a href='#' id='rmv-btn' onClick={() => removePost(objectID)}>
+                <a
+                  href='#'
+                  id='rmv-btn'
+                  onClick={() => removePost(objectID)}
+                  className='btn'
+                >
                   Remove
                 </a>
               </div>
