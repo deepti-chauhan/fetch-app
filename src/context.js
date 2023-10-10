@@ -6,7 +6,8 @@ let API = 'https://hn.algolia.com/api/v1/search?'
 
 //intital data
 const intialState = {
-  isLoading: true,
+  isError: false,
+  isLoading: false,
   query: '',
   nbPages: 0,
   page: 0,
@@ -27,18 +28,29 @@ const AppProvider = ({ children }) => {
     try {
       const res = await fetch(url)
       const data = await res.json()
-      console.log(data)
-      dispatch({
-        type: 'GET_STORIES',
-        payload: {
-          hits: data.hits,
-          nbPages: data.nbPages,
-        },
-      })
+      getStories(data)
     } catch (error) {
-      //get error
+      //get error in main browser
       console.log(error)
+      getErrors(error)
     }
+  }
+
+  const getErrors = (e) => {
+    dispatch({
+      type: 'GET_ERRORS',
+    })
+  }
+
+  const getStories = (QueryData) => {
+    dispatch({
+      type: 'GET_STORIES',
+      payload: {
+        hits: QueryData.hits,
+        nbPages: QueryData.nbPages,
+      },
+    })
+    console.log(QueryData)
   }
 
   const removePost = (post_ID) => {
@@ -73,6 +85,7 @@ const AppProvider = ({ children }) => {
       () => fetchApiData(`${API}query=${state.query}&page=${state.page}`),
       1000
     )
+
     return () => {
       clearTimeout(timeoutId)
     }

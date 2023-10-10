@@ -5,13 +5,21 @@ const reducer = (state, action) => {
         ...state,
         isLoading: true,
       }
+
     case 'GET_STORIES':
       return {
         ...state,
         hits: action.payload.hits,
         nbPages: action.payload.nbPages,
         isLoading: false,
+        isError: false,
       }
+    case 'GET_ERRORS':
+      return {
+        isLoading: false,
+        isError: true,
+      }
+
     case 'REMOVE_POST':
       return {
         ...state,
