@@ -1,38 +1,65 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Times, 'Times New Roman', serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(181, 200, 240);
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  font-size: 2.4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 2rem 0;
+  color: rgba(21, 19, 60, 0, 5);
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+span {
+  text-transform: capitalize;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: rgb(189, 230, 163);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-btn {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#rmv-btn {
+  color: red;
 }
