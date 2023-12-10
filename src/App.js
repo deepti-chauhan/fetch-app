@@ -2,13 +2,13 @@ import './App.css'
 import './Stories'
 import Stories from './Stories'
 import Search from './Search'
-import Pagination from './Pagination'
+import PaginationBar from './Pagination'
 
 function App() {
   return (
     <div className='App'>
       <Search />
-      <Pagination />
+      <PaginationBar />
       <Stories />
     </div>
   )

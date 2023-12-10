@@ -1,3 +1,4 @@
+import NewsCard from './components/NewsCard'
 import { useGlobalContext } from './context'
 function Stories() {
   const { hits, isLoading, removePost, isError } = useGlobalContext()
@@ -24,25 +25,14 @@ function Stories() {
         const { title, author, objectID, url, num_comments } = currPost
         return (
           <>
-            <div className='card' key={objectID}>
-              <h2>{title}</h2>
-              <p>
-                By <span>{author}</span> | <span>{num_comments}</span> Comments
-              </p>
-              <div className='card-btn'>
-                <a href={url} target='_blank' rel='noreferrer' className='btn'>
-                  Read More
-                </a>
-                <a
-                  href='#'
-                  id='rmv-btn'
-                  onClick={() => removePost(objectID)}
-                  className='btn'
-                >
-                  Remove
-                </a>
-              </div>
-            </div>
+            <NewsCard
+              key={objectID}
+              title={title}
+              author={author}
+              removePost={removePost}
+              id={objectID}
+              newsUrl={url}
+            />
           </>
         )
       })}
