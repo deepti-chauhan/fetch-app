@@ -9,11 +9,7 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background: url('https://images.unsplash.com/photo-1451188502541-13943edb6acb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2128&q=80');
-  background-color: rgb(181, 200, 240);
-  background: no-repeat cover;
-}
+
 
 h1 {
   color: antiquewhite;
@@ -54,9 +50,13 @@ span {
   text-align: center;
 }
 
+.search h1{
+  color: black;
+}
+
 .search input {
   background: transparent;
-  border: none;
+  /* border: none; */
   outline: none;
   color: black;
   /* background-color: antiquewhite; */
@@ -70,9 +70,10 @@ span {
 .card {
   min-width: 10rem;
   width: 30vw;
-  padding: 4rem;
-  background-color: rgb(189, 230, 163);
-  border-radius: 30px;
+  padding: 3em ;
+  border: 1px solid #cfcfcf;
+  /* background-color: rgb(189, 230, 163); */
+  border-radius: 6px;
 }
 
 .card-btn {

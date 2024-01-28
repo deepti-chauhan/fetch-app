@@ -1,12 +1,12 @@
 import React from 'react'
-import { useGlobalContext } from './context'
+import { useGlobalContext } from '../context/context'
 function Search() {
   const { query, searchPost } = useGlobalContext()
 
   return (
     <>
       <div className='search'>
-        <h1>My Technical News Website </h1>
+        <h1>Newstalgia</h1>
         <form onSubmit={(e) => e.preventDefault()}>
           <div>
             <input
