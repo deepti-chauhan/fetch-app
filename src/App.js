@@ -1,17 +1,16 @@
-import './App.css'
-import './Stories'
-import Stories from './Stories'
-import Search from './Search'
-import Pagination from './Pagination'
+import "./App.css";
+import Pagination from "./components/Pagination";
+import Search from "./components/Search";
+import Stories from "./components/Stories";
 
 function App() {
   return (
-    <div className='App'>
+    <div className='font-serif'>
       <Search />
       <Pagination />
       <Stories />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

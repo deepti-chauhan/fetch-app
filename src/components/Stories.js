@@ -1,4 +1,4 @@
-import { useGlobalContext } from './context'
+import { useGlobalContext } from '../context/context'
 function Stories() {
   const { hits, isLoading, removePost, isError } = useGlobalContext()
 
