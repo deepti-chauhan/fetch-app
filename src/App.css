@@ -2,117 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Times, 'Times New Roman', serif;
 }
 
-html {
-  font-size: 62.5%;
+.vector-shadow {
+  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.2);
 }
 
-
-
-h1 {
-  color: antiquewhite;
-  font-size: 3.2rem;
-  margin: 2rem;
-  text-align: center;
+.text-shadow {
+  text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
-
-h2 {
-  font-size: 2.4rem;
-}
-
-p {
-  margin: 2rem 0;
-  color: rgba(21, 19, 60, 0, 5);
-  display: inline-block;
-}
-
-span {
-  text-transform: capitalize;
-}
-
-.container {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 4rem; */
-  margin-left: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 0.1rem;
-  row-gap: 3rem;
-}
-
-.search {
-  /* background-color: blue; */
-  text-align: center;
-}
-
-.search h1{
-  color: black;
-}
-
-.search input {
-  background: transparent;
-  /* border: none; */
-  outline: none;
-  color: black;
-  /* background-color: antiquewhite; */
-  padding: 20px 400px 20px 20px;
-  border-radius: 45px;
-  font-size: medium;
-  backdrop-filter: saturate(180%) blur(10px);
-  letter-spacing: 3px;
-}
-
-.card {
-  min-width: 10rem;
-  width: 30vw;
-  padding: 3em ;
-  border: 1px solid #cfcfcf;
-  /* background-color: rgb(189, 230, 163); */
-  border-radius: 6px;
-}
-
-.card-btn {
-  display: flex;
-  justify-content: space-between;
-  text-decoration: none;
-  letter-spacing: 2px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-#rmv-btn {
-  background-color: azure;
-  color: red;
-}
-
-/* pagination start */
-.pagination-container {
-  /* background-color: blue; */
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: aliceblue;
-  letter-spacing: 2px;
-  font-size: 16px;
-}
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 10px 20px;
-  margin: 20px 10px 20px 10px;
-  background: transparent;
-  background-color: rebeccapurple;
-  color: aliceblue;
-  /* border-radius: 25px; */
-}
-/* pagination ends */
